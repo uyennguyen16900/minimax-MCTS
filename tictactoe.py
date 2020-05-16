@@ -37,42 +37,6 @@ def evaluate(state, winner):
     elif state == "Draw":
         return 0
 
-# def minimax(state, player):
-#     """"""
-#     winner, current_state = check_current_state(state)
-#     if current_state == "Draw" or current_state == "Done":
-#         return {"score": evaluate(current_state, winner), "move": "-1 -1"}
-#
-#     best = {}
-#
-#     if player == 'X':
-#         best["score"] = -math.inf
-#         best['move'] = ""
-#     else:
-#         best["score"] = math.inf
-#         best['move'] = ""
-#
-#     for cell in empty_cells(state):
-#         x, y = cell[0], cell[1]
-#         state[x][y] = player
-#         if player == "O":
-#             result = minimax(state, "X")
-#         else:
-#             result = minimax(state, "O")
-#         state[x][y] = " "
-#         result['move'] = "{} {}".format(x, y)
-#
-#         # if player is computer
-#         if player == 'X':
-#             if result['score'] > best['score']:
-#                 best = result
-#         # if player is human
-#         else:
-#             if result['score'] < best['score']:
-#                 best = result
-#
-#     return best
-
 
 def minimax(state, player, alpha=-math.inf, beta=math.inf):
     """"""
@@ -116,15 +80,14 @@ def minimax(state, player, alpha=-math.inf, beta=math.inf):
     return best
 
 
-
 def display_board(state):
     """"""
     print("        0     1     2  ")
     print("     -------------------")
     print("  0  |  {}  |  {}  |  {}  |".format(state[0][0], state[0][1], state[0][2]))
-    print("     -------+------+----")
+    print("     ------+-----+------")
     print("  1  |  {}  |  {}  |  {}  |".format(state[1][0], state[1][1], state[1][2]))
-    print("     -------+------+----")
+    print("     ------+-----+------")
     print("  2  |  {}  |  {}  |  {}  |".format(state[2][0], state[2][1], state[2][2]))
     print("     -------------------")
 
@@ -152,8 +115,7 @@ def check_current_state(state):
 
 if __name__ == "__main__":
     playing = True
-    # alpha = -math.inf
-    # beta = math.inf
+
     while playing:
         print("TIC TAC TOE")
         print("========================================")
