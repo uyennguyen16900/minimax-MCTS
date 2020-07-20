@@ -14,12 +14,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 Clone the repository
 ```
-git clone https://github.com/uyennguyen16900/tic-tac-toe-AI.git
+git clone https://github.com/uyennguyen16900/minimax-MCTS.git
 ```
 
 Go to the repo folder
 ```
-cd tic-tac-toe-AI
+cd minimax-MCTS
 ```
 
 Run the python version of the game
