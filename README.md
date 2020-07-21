@@ -8,7 +8,7 @@ Minimax is used in decision making and game theory to find the optimal move for 
 
 ### Alpha-Beta Pruning
 
-Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. ([Wikipedia])(https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
+Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. - [Wikipedia](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
 
 ## Getting Started
 
